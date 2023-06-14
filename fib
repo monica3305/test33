@@ -1,0 +1,14 @@
+import math
+
+# Define the Fibonacci sequence function  
+def fib(n):  
+    if n < 0:  
+        raise ValueError("n must be non-negative")  
+    if n <= 1:  
+        return n  
+    else:  
+        return fib(n-1) + fib(n-2)
+
+# Print the Fibonacci sequence up to 10  
+for i in range(10):  
+    print(fib(i))  
